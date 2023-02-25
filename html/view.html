@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chakra+Petch:ital,wght@1,300&family=Martian+Mono:wght@500&family=Signika:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chakra+Petch:ital,wght@1,300&family=Martian+Mono:wght@500&family=Quicksand:wght@300&family=Signika:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chakra+Petch:ital,wght@1,300&family=Martian+Mono:wght@500&family=Quicksand:wght@300&family=Rubik:wght@500&family=Signika:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <a href="index.html">Home</a>
+            <a href="admin-modal.html">Registration Form</a>
+        </div>
+
+        <div class="right">
+            <form action="/" method="post" role="search" novalidate>
+                <input type="search" name="search" placeholder="Search" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th scope="col" class="th">ID</th>
+                <th scope="col" class="th">NAME</th>
+                <th scope="col" class="th">EMAIL</th>
+                <th scope="col" class="th">PHONE</th>
+                <th scope="col" class="th">PASSWORD</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td class="td">{{id}}</td>
+                <td class="td">{{name}}</td>
+                <td class="td">{{email}}</td>
+                <td class="td">{{phone}}</td>
+                <td class="td">{{password}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    </div>
+
+</body>
+
+</html>

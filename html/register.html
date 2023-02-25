@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section>
+        <div class="user">
+            <span onclick="faculty()">Faculty</span>
+            <span onclick="student()">Student</span>
+            <hr id="indicator">
+        </div>
+        <div class="form" id="faculty" style="display: block;">
+            <form action="">
+                <div class="name">
+                    <span><i class="bi bi-person"></i></span>
+                    <input type="text" name="name" placeholder="Full Name">
+                </div>
+                <div class="email">
+                    <span><i class="bi bi-envelope"></i></span>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="mob">
+                    <span><i class="bi bi-phone fa-2x"></i></span>
+                    <input type="tel" name="mob" placeholder="Phone No..">
+                </div>
+                <div class="fid">
+                    <span><i class="bi bi-phone fa-2x"></i></span>
+                    <input type="text" name="fid" placeholder="Faculty ID">
+                </div>
+                <div class="image">
+                    <span><i class="bi bi-person-bounding-box"></i></span>
+                    <input type="file" name="image">
+                </div>
+                <div class="dob">
+                    <span><i class="bi bi-calendar-check"></i></span>
+                    <input type="date" name="date">
+                </div>
+                <div class="password">
+                    <span><i class="bi bi-key"></i></span>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="cpassword">
+                    <span><i class="bi bi-key"></i></span>
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="btn">
+                    <button type="submit">+Add</button>
+                </div>
+            </form>
+            <a href="view.html"><button class="view">View</button></a>
+        </div>
+        <div class="form" id="student" style="display: none;">
+            <form action="">
+                <div class="name">
+                    <span><i class="bi bi-person"></i></span>
+                    <input type="text" name="name" placeholder="Full Name">
+                </div>
+                <div class="email">
+                    <span><i class="bi bi-envelope"></i></span>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="mob">
+                    <span><i class="bi bi-phone fa-2x"></i></span>
+                    <input type="tel" name="mob" placeholder="Phone No..">
+                </div>
+                <div class="sid">
+                    <span><i class="bi bi-phone fa-2x"></i></span>
+                    <input type="text" name="sid" placeholder="Student ID">
+                </div>
+                <div class="image">
+                    <span><i class="bi bi-person-bounding-box"></i></span>
+                    <input type="file" name="image">
+                </div>
+                <div class="dob">
+                    <span><i class="bi bi-calendar-check"></i></span>
+                    <input type="date" name="date">
+                </div>
+                <div class="password">
+                    <span><i class="bi bi-key"></i></span>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="cpassword">
+                    <span><i class="bi bi-key"></i></span>
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="btn">
+                    <button type="submit">+Add</button>
+                </div>
+            </form>
+            <a href="view.html"><button class="view">View</button></a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let facultyForm = document.getElementById("faculty");
+        let studentForm = document.getElementById("student");
+
+        function faculty() {
+            facultyForm.style.display = "block";
+            studentForm.style.display = "none";
+        }
+
+        function student() {
+            facultyForm.style.display = "none";
+            studentForm.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
